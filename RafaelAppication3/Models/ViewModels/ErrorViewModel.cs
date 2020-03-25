@@ -1,6 +1,6 @@
 using System;
 
-namespace RafaelAppication3.Models
+namespace RafaelAppication3.Models.ViewModels
 {
     public class ErrorViewModel
     {

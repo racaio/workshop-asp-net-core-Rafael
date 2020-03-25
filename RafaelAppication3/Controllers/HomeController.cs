@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RafaelAppication3.Models;
+using RafaelAppication3.Models.ViewModels;
 
 namespace RafaelAppication3.Controllers
 {
