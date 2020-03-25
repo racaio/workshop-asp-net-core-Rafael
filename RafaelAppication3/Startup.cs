@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using RafaelAppication3.Models;
 
 namespace RafaelAppication3
 {
@@ -33,6 +35,9 @@ namespace RafaelAppication3
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<RafaelAppication3Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("RafaelAppication3Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
